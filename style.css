@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap');
+:root {
+    --numbg: #21273e;
+    --numcolor: #e4e7f1;
+    --navbg: #0f121d;
+}
+
+* {
+    /*font-family: 'Ubuntu', sans-serif;*/
+    font-family: 'Crimson Text', serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: url('https://source.unsplash.com/1600x900/?interior');
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    position: absolute;
+    top: 5vh;
+    left: 5vw;
+    width: 90vw;
+    height: 10vh;
+    background-color: var(--navbg);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    z-index: 1000;
+}
+
+nav h2 {
+    font-size: 25px;
+}
+
+nav ul {
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+    position: relative;
+    padding: 0 3px;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    height: 2px;
+    width: 0;
+    border-radius: 10px;
+    left: 0;
+    bottom: -5px;
+    transition: all .3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.num_div {
+    height: 100%;
+    width: 20vw;
+    background-color: var(--numbg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.num_div h1 {
+    font-size: 300px;
+    text-transform: uppercase;
+    color: var(--numcolor);
+    opacity: .1;
+    font-family: 'Bebas Neue', cursive;
+    margin-left: -100px;
+}
+
+.design_main_text {
+    width: 20vw;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    color: #fff;
+}
+
+.design_main_text h3 {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.design_main_text h1 {
+    font-size: 100px;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.design_main_text p {
+    font-size: 13px;
+    padding-right: 50px;
+}
+
+.text {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    width: 20vw;
+    color: #fff;
+}
+
+.text h4 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.text p {
+    font-size: 13px;
+    padding-left: 15px;
+}
+
+.glass {
+    position: absolute;
+    top: 70%;
+    right: 10px;
+    height: 20vh;
+    width: 30vw;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    display: flex;
+    color: #fff;
+}
+
+.glass_num {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--numbg);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.glass_num h1 {
+    font-size: 50px;
+    color: var(--numcolor);
+    opacity: .2;
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+}
+
+.glass_text {
+    padding: 0 5px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.glass_text h2 {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.glass_text p {
+    font-size: 14px;
+}
