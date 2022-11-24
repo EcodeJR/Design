@@ -42,9 +42,22 @@ nav h2 {
     font-size: 25px;
 }
 
+nav h2 span {
+    font-size: 25px;
+    color: #a80508;
+}
+
+nav .list {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 nav ul {
     display: flex;
-    width: 40%;
+    width: 60%;
     align-items: center;
     justify-content: space-around;
 }
@@ -82,6 +95,109 @@ nav i {
     cursor: pointer;
 }
 
+#open_nav {
+    display: none;
+}
+
+#close_nav {
+    display: none;
+}
+
+
+/*
+@media only screen and (max-width: 2560px) {
+    nav {
+        padding: 0 50px;
+    }
+    nav h2 {
+        font-size: 100px;
+    }
+    nav ul li a {
+        font-size: 50px;
+    }
+    nav ul li a::after {
+        height: 5px;
+    }
+    nav i {
+        font-size: 50px;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    nav {
+        padding: 0 40px;
+    }
+    nav h2 {
+        font-size: 50px;
+    }
+    nav ul li a {
+        font-size: 30px;
+    }
+    nav ul li a::after {
+        height: 5px;
+    }
+    nav i {
+        font-size: 30px;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    nav {
+        padding: 0 30px;
+    }
+    nav h2 {
+        font-size: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    nav ul li a::after {
+        height: 5px;
+    }
+    nav i {
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+*/
+
+@media only screen and (max-width: 630px) {
+    nav .list {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: -100vh;
+        left: 0;
+        flex-direction: column;
+        background-color: var(--navbg);
+        justify-content: center;
+    }
+    nav ul {
+        height: 50%;
+        flex-direction: column;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    #close_nav {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 30px;
+    }
+    nav i {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    #open_nav {
+        display: block;
+        margin: auto 0;
+    }
+}
+
 .num_div {
     height: 100%;
     width: 20vw;
@@ -102,6 +218,43 @@ nav i {
     opacity: .1;
     font-family: 'Bebas Neue', cursive;
     margin-left: -100px;
+}
+
+
+/*
+@media only screen and (max-width: 2560px) {
+    .num_div {
+        width: 30vw;
+    }
+    .num_div h1 {
+        font-size: 1000px;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .num_div {
+        width: 30vw;
+    }
+    .num_div h1 {
+        font-size: 700px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .num_div {
+        width: 30vw;
+    }
+    .num_div h1 {
+        font-size: 500px;
+    }
+}
+*/
+
+@media only screen and (max-width: 630px) {
+    .num_div {
+        height: 100%;
+        width: 30vw;
+    }
 }
 
 .design_main_text {
@@ -128,6 +281,93 @@ nav i {
     padding-right: 50px;
 }
 
+
+/*
+@media only screen and (max-width: 2560px) {
+    .design_main_text {
+        width: 30vw;
+    }
+    .design_main_text h3 {
+        font-size: 50px;
+    }
+    .design_main_text h1 {
+        font-size: 500px;
+        margin: 3px 0;
+    }
+    .design_main_text p {
+        font-size: 40px;
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .design_main_text {
+        width: 30vw;
+    }
+    .design_main_text h3 {
+        font-size: 40px;
+    }
+    .design_main_text h1 {
+        font-size: 300px;
+        margin: 2px 0;
+    }
+    .design_main_text p {
+        font-size: 30px;
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .design_main_text {
+        width: 30vw;
+    }
+    .design_main_text h3 {
+        font-size: 30px;
+    }
+    .design_main_text h1 {
+        font-size: 200px;
+        margin: 2px 0;
+    }
+    .design_main_text p {
+        font-size: 20px;
+        padding-right: 20px;
+    }
+}
+*/
+
+@media only screen and (max-width: 630px) {
+    .design_main_text {
+        width: 30vw;
+    }
+    .design_main_text h3 {
+        font-size: 15px;
+    }
+    .design_main_text h1 {
+        font-size: 120px;
+        margin: 3px 0;
+    }
+    .design_main_text p {
+        font-size: 14px;
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .design_main_text {
+        width: 30vw;
+    }
+    .design_main_text h3 {
+        font-size: 15px;
+    }
+    .design_main_text h1 {
+        font-size: 90px;
+    }
+    .design_main_text p {
+        font-size: 12px;
+        padding-right: 20px;
+    }
+}
+
 .text {
     position: absolute;
     top: 20%;
@@ -146,13 +386,81 @@ nav i {
     padding-left: 15px;
 }
 
+
+/*
+@media only screen and (max-width: 2560px) {
+    .text {
+        width: 40vw;
+    }
+    .text h4 {
+        font-size: 70px;
+        font-weight: 700;
+    }
+    .text p {
+        font-size: 50px;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .text {
+        width: 40vw;
+    }
+    .text h4 {
+        font-size: 50px;
+    }
+    .text p {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .text {
+        width: 40vw;
+    }
+    .text h4 {
+        font-size: 40px;
+    }
+    .text p {
+        font-size: 20px;
+    }
+}
+*/
+
+@media only screen and (max-width: 630px) {
+    .text {
+        width: 50vw;
+    }
+    .text h4 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .text p {
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .text {
+        width: 50vw;
+    }
+    .text h4 {
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .text p {
+        font-size: 13px;
+        font-weight: 600;
+    }
+}
+
 .glass {
     position: absolute;
     top: 70%;
     right: 10px;
     height: 20vh;
     width: 30vw;
-    /* From https://css.glass */
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     backdrop-filter: blur(5px);
@@ -197,6 +505,70 @@ nav i {
 
 .glass_text p {
     font-size: 14px;
+}
+
+
+/*
+@media only screen and (max-width: 2560px) {
+    .glass {
+        width: 50vw;
+    }
+    .glass_num h1 {
+        font-size: 300px;
+    }
+    .glass_text h2 {
+        font-size: 70px;
+    }
+    .glass_text p {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .glass {
+        width: 50vw;
+    }
+    .glass_num h1 {
+        font-size: 100px;
+    }
+    .glass_text h2 {
+        font-size: 50px;
+    }
+    .glass_text p {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .glass {
+        width: 50vw;
+    }
+    .glass_num h1 {
+        font-size: 80px;
+    }
+    .glass_text h2 {
+        font-size: 40px;
+    }
+    .glass_text p {
+        font-size: 20px;
+    }
+}
+*/
+
+@media only screen and (max-width: 1000px) {
+    .glass {
+        width: 40vw;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .glass {
+        width: 60vw;
+        top: 75%;
+    }
+    .glass_num {
+        width: 40%;
+    }
 }
 
 
