@@ -16,11 +16,17 @@
 }
 
 body {
+    position: relative;
+}
+
+.body {
     height: 100vh;
     width: 100%;
-    background: url('https://source.unsplash.com/1600x900/?interior');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 100;
 }
 
 nav {
@@ -35,7 +41,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 0 10px;
-    z-index: 1000;
+    z-index: 100;
 }
 
 nav h2 {
@@ -268,6 +274,7 @@ nav i {
 .design_main_text h3 {
     font-size: 13px;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 .design_main_text h1 {
@@ -568,6 +575,105 @@ nav i {
     }
     .glass_num {
         width: 40%;
+    }
+}
+
+
+/*about*/
+
+.about,
+.project,
+.services,
+.contact {
+    position: absolute;
+    top: -100vh;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    z-index: 200;
+}
+
+.abt_title,
+.pro_title,
+.ser_title,
+.con_title {
+    height: 40%;
+    width: 100%;
+    background: url('https://source.unsplash.com/1600x900/?tall-building');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pro_title {
+    background: url('https://source.unsplash.com/1600x900/?furniture-store');
+}
+
+#ser_title {
+    background: url('https://source.unsplash.com/1600x900/?people-at-work');
+}
+
+#con_title {
+    background: url('https://source.unsplash.com/1600x900/?contact-us');
+}
+
+.abt_title button,
+.pro_title button,
+.ser_title button,
+.con_title button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px 25px;
+    border: none;
+    outline: none;
+    background-color: var(--navbg);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.abt_title h1,
+.pro_title h1,
+.ser_title h1,
+.con_title h1 {
+    font-size: 70px;
+    font-weight: 600;
+    color: var(--numbg);
+    /*text-shadow: 1px 1px 3px #fff;*/
+}
+
+.abt_text,
+.pro_text,
+.ser_text,
+.con_text {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+}
+
+.abt_text p,
+.pro_text p,
+.ser_text p,
+.con_text p {
+    font-size: 17px;
+}
+
+@media only screen and (max-width: 400px) {
+    .abt_text,
+    .pro_text,
+    .ser_text,
+    .con_text {
+        padding: 20px;
     }
 }
 

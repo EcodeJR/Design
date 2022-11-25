@@ -21,44 +21,86 @@
         </div>
         <h2 class="loading">Loading</h2>
     </div>
-    <nav>
-        <h2>DESIGN-<span>Q</span></h2>
-        <div class="list" id="list">
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Project</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <i class='bx bx-search-alt'></i>
-            <i class='bx bx-x' id="close_nav"></i>
-        </div>
+    <section class="body" id="body">
+        <nav>
+            <h2>DESIGN-<span>Q</span></h2>
+            <div class="list" id="list">
+                <ul>
+                    <li><a href="#" id="aboutBtn">About</a></li>
+                    <li><a href="#" id="projectBtn">Project</a></li>
+                    <li><a href="#" id="servicesBtn">Services</a></li>
+                    <li><a href="#" id="contactBtn">Contact</a></li>
+                </ul>
+                <i class='bx bx-search-alt'></i>
+                <i class='bx bx-x' id="close_nav"></i>
+            </div>
 
-        <i class='bx bx-menu-alt-left' id="open_nav"></i>
+            <i class='bx bx-menu-alt-left' id="open_nav"></i>
 
 
-    </nav>
-    <div class="num_div">
-        <h1>01</h1>
-    </div>
-    <div class="design_main_text">
-        <h3>Interior</h3>
-        <h1>Design</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates vitae optio, iure, </p>
-    </div>
-    <div class="text">
-        <h4>A beautiful Interior</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non pariatur autem libero voluptatum expedita asperiores</p>
-    </div>
-    <div class="glass">
-        <div class="glass_num">
-            <h1>02</h1>
+        </nav>
+        <div class="num_div">
+            <h1 id="main_num"></h1>
         </div>
-        <div class="glass_text">
-            <h2>Next Post</h2>
-            <p>Explore more Interior designs</p>
+        <div class="design_main_text">
+            <h3 id="main_text"></h3>
+            <h1>Design</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates vitae optio, iure, </p>
         </div>
-    </div>
+        <div class="text">
+            <h4>A beautiful <span id="text"></span></h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non pariatur autem libero voluptatum expedita asperiores</p>
+        </div>
+        <div class="glass">
+            <div class="glass_num" id="next">
+                <h1 id="next_num"></h1>
+            </div>
+            <div class="glass_text">
+                <h2>Next Post</h2>
+                <p>Explore more <span id="glass_text"></span> designs</p>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="abt_title">
+            <button onclick="hideSection()">back</button>
+            <h1>About Us</h1>
+        </div>
+        <div class="abt_text">
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolorum aliquam dignissimos perspiciatis quidem officiis quod sunt, enim ipsa vero aperiam veritatis pariatur animi, molestias cupiditate culpa commodi et ducimus. Lorem ipsum dolor,
+                sit amet consectetur adipisicing elit. Fuga impedit labore, distinctio odit accusantium, facere ea qui debitis nostrum totam eaque. Laboriosam facilis fugit eligendi exercitationem minima voluptates? Laudantium, expedita!</p>
+        </div>
+    </section>
+    <section class="project" id="project">
+        <div class="pro_title" id="pro_title">
+            <button onclick="hideSection()">back</button>
+            <h1>Project</h1>
+        </div>
+        <div class="pro_text">
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolorum aliquam dignissimos perspiciatis quidem officiis quod sunt, enim ipsa vero aperiam veritatis pariatur animi, molestias cupiditate culpa commodi et ducimus. Lorem ipsum dolor,
+                sit amet consectetur adipisicing elit. Fuga impedit labore, distinctio odit accusantium, facere ea qui debitis nostrum totam eaque. Laboriosam facilis fugit eligendi exercitationem minima voluptates? Laudantium, expedita!</p>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <div class="ser_title" id="ser_title">
+            <button onclick="hideSection()">back</button>
+            <h1>Services</h1>
+        </div>
+        <div class="ser_text">
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolorum aliquam dignissimos perspiciatis quidem officiis quod sunt, enim ipsa vero aperiam veritatis pariatur animi, molestias cupiditate culpa commodi et ducimus. Lorem ipsum dolor,
+                sit amet consectetur adipisicing elit. Fuga impedit labore, distinctio odit accusantium, facere ea qui debitis nostrum totam eaque. Laboriosam facilis fugit eligendi exercitationem minima voluptates? Laudantium, expedita!</p>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="con_title" id="con_title">
+            <button onclick="hideSection()">back</button>
+            <h1>contact</h1>
+        </div>
+        <div class="con_text">
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolorum aliquam dignissimos perspiciatis quidem officiis quod sunt, enim ipsa vero aperiam veritatis pariatur animi, molestias cupiditate culpa commodi et ducimus. Lorem ipsum dolor,
+                sit amet consectetur adipisicing elit. Fuga impedit labore, distinctio odit accusantium, facere ea qui debitis nostrum totam eaque. Laboriosam facilis fugit eligendi exercitationem minima voluptates? Laudantium, expedita!</p>
+        </div>
+    </section>
 
 
 
