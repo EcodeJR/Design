@@ -290,13 +290,17 @@ nav i {
 
 #Explore {
     border: 1px solid #fff;
-    color: #fff;
     padding: 10px 20px;
     outline: none;
     background: transparent;
     margin-top: 10px;
     cursor: pointer;
     text-decoration: none;
+}
+
+#Explore a {
+    text-decoration: none;
+    color: #fff;
 }
 
 
@@ -690,6 +694,69 @@ nav i {
     .ser_text,
     .con_text {
         padding: 20px;
+    }
+}
+
+
+/*gallary*/
+
+.gallary_cont {
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-template-rows: repeat(auto-fit, minmax(200px, auto));
+    grid-gap: 5px;
+    place-items: center;
+    padding: 20px;
+}
+
+.download {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.download img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.download button {
+    position: absolute;
+    right: 10px;
+    bottom: -50px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.download button a {
+    text-decoration: none;
+    color: var(--navbg);
+    font-size: 20px;
+}
+
+.download button i {
+    font-size: 20px;
+    color: var(--navbg);
+}
+
+.download:hover .btn {
+    bottom: 10px;
+    transition: all .3s ease-in-out;
+}
+
+@media only screen and (max-width: 630px) {
+    .download button {
+        bottom: 10px;
+        margin: 0 auto;
     }
 }
 

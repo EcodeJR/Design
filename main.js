@@ -29,7 +29,8 @@ let designs = [{
         text1: 'Interior',
         next_num1: '02',
         glass_text1: 'Exterior',
-        body0: 'url(https://source.unsplash.com/1600x900/?interior)'
+        body0: 'url(https://source.unsplash.com/1600x900/?interior)',
+        explore1: 'interior'
     },
     {
         main_num1: '02',
@@ -37,7 +38,8 @@ let designs = [{
         text1: 'Exterior',
         next_num1: '03',
         glass_text1: 'Roof',
-        body0: 'url(https://source.unsplash.com/1600x900/?exterior)'
+        body0: 'url(https://source.unsplash.com/1600x900/?exterior)',
+        explore1: 'exterior'
     },
     {
         main_num1: '03',
@@ -45,7 +47,8 @@ let designs = [{
         text1: 'Roof',
         next_num1: '04',
         glass_text1: 'Chair',
-        body0: 'url(https://source.unsplash.com/1600x900/?roof)'
+        body0: 'url(https://source.unsplash.com/1600x900/?roof)',
+        explore1: 'roof'
     },
     {
         main_num1: '04',
@@ -53,7 +56,8 @@ let designs = [{
         text1: 'Chair',
         next_num1: '05',
         glass_text1: 'Bed',
-        body0: 'url(https://source.unsplash.com/1600x900/?chair-design)'
+        body0: 'url(https://source.unsplash.com/1600x900/?chair-design)',
+        explore1: 'chair-design'
     },
     {
         main_num1: '05',
@@ -61,7 +65,8 @@ let designs = [{
         text1: 'Bed',
         next_num1: '01',
         glass_text1: 'Interior',
-        body0: 'url(https://source.unsplash.com/1600x900/?bedroom-interior)'
+        body0: 'url(https://source.unsplash.com/1600x900/?bedroom-interior)',
+        explore1: 'bedroom-interior'
     }
 ];
 
