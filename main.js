@@ -29,7 +29,7 @@ let designs = [{
         text1: 'Interior',
         next_num1: '02',
         glass_text1: 'Exterior',
-        body0: 'url(https://source.unsplash.com/1600x900/?interior)',
+        body0: 'url(https://images.unsplash.com/photo-1558442086-8ea19a79cd4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80)',
         explore1: 'interior'
     },
     {
@@ -38,7 +38,7 @@ let designs = [{
         text1: 'Exterior',
         next_num1: '03',
         glass_text1: 'Roof',
-        body0: 'url(https://source.unsplash.com/1600x900/?exterior)',
+        body0: 'url(https://images.unsplash.com/photo-1633109956509-5303bda0cd7c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80)',
         explore1: 'exterior'
     },
     {
@@ -47,7 +47,7 @@ let designs = [{
         text1: 'Roof',
         next_num1: '04',
         glass_text1: 'Chair',
-        body0: 'url(https://source.unsplash.com/1600x900/?roof)',
+        body0: 'url(https://images.unsplash.com/photo-1602193289141-9605ad75d0a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80)',
         explore1: 'roof'
     },
     {
@@ -56,7 +56,7 @@ let designs = [{
         text1: 'Chair',
         next_num1: '05',
         glass_text1: 'Bed',
-        body0: 'url(https://source.unsplash.com/1600x900/?chair-design)',
+        body0: 'url(https://images.unsplash.com/photo-1567016507665-356928ac6679?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80)',
         explore1: 'chair-design'
     },
     {
@@ -65,7 +65,7 @@ let designs = [{
         text1: 'Bed',
         next_num1: '01',
         glass_text1: 'Interior',
-        body0: 'url(https://source.unsplash.com/1600x900/?bedroom-interior)',
+        body0: 'url(https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80)',
         explore1: 'bedroom-interior'
     }
 ];
@@ -77,6 +77,8 @@ function loadContent(index) {
     next_num.innerHTML = designs[index].next_num1;
     glass_text.innerHTML = designs[index].glass_text1;
     body1.style.background = designs[index].body0;
+    body1.style.backgroundSize = 'cover';
+    body1.style.backgroundPosition = 'center';
 }
 loadContent(index);
 
