@@ -65,7 +65,7 @@
 
 
 
-        const GridLayout = () => {
+        function MacImg() {
             macyInstance.runOnImageLoad(function() {
                 macyInstance.recalculate(true, true);
                 var evt = document.createEvent('UIEvents');
@@ -73,7 +73,8 @@
                 window.dispatchEvent(evt);
             }, true);
         }
-        GridLayout();
+        MacImg();
+
 
         //setInterval(() => {
         function Imgs() {
@@ -102,15 +103,51 @@
 
                 }
             });
-
-            GridLayout();
         };
+        window.addEventListener('load', () => {
+            Imgs();
+        });
 
-        Imgs();
+        let search = document.getElementById('search');
+        let searchBtn = document.getElementById('search_btn');
+
+        function searchImages() {
+            var search_val = search.value;
+            gridCont.innerHTML = null;
+
+            let link = "https://api.unsplash.com/search/photos?query=" + search_val + "&client_id=CZZtfrAj6IzfukN1cBL4AvfDwDO26pgy-EEUGMzJNl8&per_page=200";
+
+            console.log(search_val);
+
+            $.ajax({
+                method: 'get',
+                url: link,
+
+                success: function(data) {
+                    console.log(data)
+
+                    data.results.forEach(photo => {
+
+                        $("#container").append(`
+                    <div class="download">
+                            <img src=" ${photo.urls.regular}"/>
+                            <button class="btn"><a href="${photo.links.download_location}"><i class="bx bxs-download"></i></a></button>
+                    </div>
+                    `);
+                    });
+
+                }
+            });
+        }
+
+
+        searchBtn.addEventListener('click', () => {
+            searchImages();
+        })
+
 
         /*
-                let search = document.getElementById('search');
-                let searchBtn = document.getElementById('search_btn');
+                
 
 
 
