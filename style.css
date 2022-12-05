@@ -23,7 +23,17 @@ body {
     height: 100vh;
     width: 100%;
     position: relative;
-    z-index: 100;
+}
+
+.blur {
+    background-color: #000;
+    opacity: .4;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 80;
 }
 
 nav {
@@ -212,6 +222,7 @@ nav i {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 90;
 }
 
 .num_div h1 {
@@ -266,6 +277,7 @@ nav i {
     top: 40%;
     left: 5%;
     color: #fff;
+    z-index: 90;
 }
 
 .design_main_text h3 {
@@ -397,6 +409,7 @@ nav i {
     left: 30%;
     width: 20vw;
     color: #fff;
+    z-index: 90;
 }
 
 .text h4 {
@@ -490,6 +503,7 @@ nav i {
     -webkit-backdrop-filter: blur(5px);
     display: flex;
     color: #fff;
+    z-index: 90;
 }
 
 .glass_num {
@@ -716,7 +730,7 @@ nav i {
 }
 
 .search_input {
-    height: 50px;
+    height: 80%;
     width: 50%;
     background-color: #fff;
     display: flex;
@@ -743,8 +757,8 @@ nav i {
     min-height: 100vh;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
-    grid-template-rows: repeat(auto-fit, minmax(150px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(164px, auto));
+    grid-template-rows: repeat(auto-fit, minmax(126px, auto));
     grid-gap: 5px;
     place-items: center;
     justify-items: center;
@@ -792,6 +806,10 @@ nav i {
 }
 
 @media only screen and (max-width: 630px) {
+    .search h1 {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
     .download button {
         bottom: 10px;
         margin: 0 auto;
@@ -801,6 +819,12 @@ nav i {
     }
     .download button i {
         font-size: 15px;
+    }
+    .search_input {
+        height: 80%;
+    }
+    .search_input i {
+        font-size: 20px;
     }
 }
 

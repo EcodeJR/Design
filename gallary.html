@@ -30,7 +30,11 @@
     </div>
     <div class="gallary_cont" id="container">
 
+    </div>
 
+    <div class="ZoomImage" id="ZoomImg">
+        <i class='bx bx-x-alt' id="ZoomClose"></i>
+        <img src="" alt="">
     </div>
 
 
@@ -46,52 +50,49 @@
         window.addEventListener("load", function() {
             loader.style.display = "none";
         });
-
         let gridCont = document.getElementById('container');
 
-/*
-        const macyInstance = Macy({
-            container: gridCont,
-            breakAt: {
-                1600: 5,
-                1200: 4,
-                900: 3,
-                600: 2,
-                400: 1
-            },
-            margin: {
-                x: 5,
-                y: 5
-            }
-        })
+
+        /*
+                const macyInstance = Macy({
+                    container: gridCont,
+                    breakAt: {
+                        1600: 5,
+                        1200: 4,
+                        900: 3,
+                        600: 2,
+                        400: 1
+                    },
+                    margin: {
+                        x: 5,
+                        y: 5
+                    }
+                })
 
 
 
-        function MacImg() {
-            macyInstance.runOnImageLoad(function() {
-                macyInstance.recalculate(true, true);
-                var evt = document.createEvent('UIEvents');
-                evt.initUIEvent('resize', true, false, window, 0);
-                window.dispatchEvent(evt);
-            }, true);
-        }
-        MacImg();
-*/
+                function MacImg() {
+                    macyInstance.runOnImageLoad(function() {
+                        macyInstance.recalculate(true, true);
+                        var evt = document.createEvent('UIEvents');
+                        evt.initUIEvent('resize', true, false, window, 0);
+                        window.dispatchEvent(evt);
+                    }, true);
+                }
+                MacImg();
+        */
 
-        //setInterval(() => {
         function Imgs() {
             var search_val = 'interior';
 
             let link = "https://api.unsplash.com/search/photos?query=" + search_val + "&client_id=CZZtfrAj6IzfukN1cBL4AvfDwDO26pgy-EEUGMzJNl8&per_page=200";
-
-            console.log(search_val);
 
             $.ajax({
                 method: 'get',
                 url: link,
 
                 success: function(data) {
-                    console.log(data)
+
 
                     data.results.forEach(photo => {
 
@@ -119,7 +120,7 @@
 
             let link = "https://api.unsplash.com/search/photos?query=" + search_val + "&client_id=CZZtfrAj6IzfukN1cBL4AvfDwDO26pgy-EEUGMzJNl8&per_page=200";
 
-            console.log(search_val);
+            search.value = '';
 
             $.ajax({
                 method: 'get',
@@ -149,10 +150,6 @@
 
 
         /*
-                
-
-
-
                 const searchImages = async quary => {
                     let {
                         data: {
@@ -188,9 +185,6 @@
                     GridLayout();
                 }
                 searchBtn.addEventListener('click', handleSearch())
-
-                //}, 1000);
-
         */
     </script>
 </body>
